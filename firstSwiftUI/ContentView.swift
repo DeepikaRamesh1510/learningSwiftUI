@@ -11,22 +11,29 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         
-        VStack (alignment: .leading) {
-            Text("Name")
-                .foregroundColor(.green)
-                .font(.title)
-                .multilineTextAlignment(.center)
-            HStack {
-                Text("Occupation")
-                    .font(.subheadline)
-                    .foregroundColor(.yellow)
-                Spacer()
-                Text("Exp")
-                    .font(.subheadline)
-                    .foregroundColor(.yellow)
+        VStack {
+            MapBackground()
+                .frame(height: 250)
+                .edgesIgnoringSafeArea(.top)
+            CustomImageView()
+                .offset(y: -100)
+                .padding(.bottom, -130)
+            VStack (alignment: .leading) {
+                Text("Name")
+                    .font(.title)
+                    .foregroundColor(.green)
+                    .multilineTextAlignment(.center)
+                HStack {
+                    Text("Occupation")
+                        .font(.subheadline)
+                    Spacer()
+                    Text("Nationality")
+                        .font(.subheadline)
+                }
             }
+            .padding()
+            Spacer()
         }
-        .padding()
         
     }
 }
