@@ -14,6 +14,7 @@
 		805AED0B24E292AC004B2388 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 805AED0A24E292AC004B2388 /* Preview Assets.xcassets */; };
 		805AED0E24E292AC004B2388 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 805AED0C24E292AC004B2388 /* LaunchScreen.storyboard */; };
 		805AED1624E2A940004B2388 /* CustomImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 805AED1524E2A940004B2388 /* CustomImageView.swift */; };
+		805AED1824E2AC63004B2388 /* MapBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 805AED1724E2AC63004B2388 /* MapBackground.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		805AED0D24E292AC004B2388 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		805AED0F24E292AC004B2388 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		805AED1524E2A940004B2388 /* CustomImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomImageView.swift; sourceTree = "<group>"; };
+		805AED1724E2AC63004B2388 /* MapBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapBackground.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 				805AED0F24E292AC004B2388 /* Info.plist */,
 				805AED0924E292AC004B2388 /* Preview Content */,
 				805AED1524E2A940004B2388 /* CustomImageView.swift */,
+				805AED1724E2AC63004B2388 /* MapBackground.swift */,
 			);
 			path = firstSwiftUI;
 			sourceTree = "<group>";
@@ -151,6 +154,7 @@
 			files = (
 				805AED0224E292A6004B2388 /* AppDelegate.swift in Sources */,
 				805AED1624E2A940004B2388 /* CustomImageView.swift in Sources */,
+				805AED1824E2AC63004B2388 /* MapBackground.swift in Sources */,
 				805AED0424E292A6004B2388 /* SceneDelegate.swift in Sources */,
 				805AED0624E292A6004B2388 /* ContentView.swift in Sources */,
 			);
