@@ -1,5 +1,5 @@
 //
-//  ListView.swift
+//  RowView.swift
 //  firstSwiftUI
 //
 //  Created by Deepika on 18/08/20.
@@ -8,7 +8,7 @@
 
 import SwiftUI
 
-struct ListView: View {
+struct RowView: View {
     var landMark: Landmark
     var body: some View {
         HStack {
@@ -22,8 +22,8 @@ struct ListView: View {
 struct ListView_Previews: PreviewProvider {
     static var previews: some View {
         Group {
-            ListView(landMark: landmarkData[0])
-            ListView(landMark: landmarkData[1])
+            RowView(landMark: landmarkData[0])
+            RowView(landMark: landmarkData[1])
         }.previewLayout(.sizeThatFits)
         
     }
