@@ -21,6 +21,10 @@ struct ListView: View {
 
 struct ListView_Previews: PreviewProvider {
     static var previews: some View {
-        ListView(landMark: landmarkData[0])
+        Group {
+            ListView(landMark: landmarkData[0])
+            ListView(landMark: landmarkData[1])
+        }.previewLayout(.sizeThatFits)
+        
     }
 }
