@@ -23,6 +23,10 @@ struct ListView: View {
 
 struct ListView_Previews: PreviewProvider {
     static var previews: some View {
-        ListView()
+        ForEach(["iPhone SE", "iPhone 11 Pro Max"], id: \.self) { deviceName in
+            ListView()
+                .previewDevice(PreviewDevice(rawValue: deviceName))
+                .previewDisplayName(deviceName)
+        }
     }
 }
