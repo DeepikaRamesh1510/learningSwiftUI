@@ -9,37 +9,40 @@
 import SwiftUI
 
 struct DetailView: View {
+    let landmark: Landmark
+    
     var body: some View {
         
         VStack {
-            MapBackground()
+            MapBackground(coordinate: landmark.locationCoordinate)
                 .frame(height: 250)
                 .edgesIgnoringSafeArea(.top)
-            CustomImageView()
-                .offset(y: -100)
-                .padding(.bottom, -130)
+            CustomImageView(image: landmark.image)
+                .offset(y: -150)
+                .padding(.bottom, -150)
             VStack (alignment: .leading) {
-                Text("Name")
+                Text(landmark.name)
                     .font(.title)
                     .foregroundColor(.green)
                     .multilineTextAlignment(.center)
                 HStack {
-                    Text("Occupation")
+                    Text(landmark.park)
                         .font(.subheadline)
                     Spacer()
-                    Text("Nationality")
+                    Text(landmark.state)
                         .font(.subheadline)
                 }
             }
             .padding()
             Spacer()
         }
+        .navigationBarTitle(Text(landmark.name), displayMode: .inline)
         
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        DetailView()
+        DetailView(landmark: landmarkData[0])
     }
 }

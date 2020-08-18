@@ -9,8 +9,9 @@
 import SwiftUI
 
 struct CustomImageView: View {
+    var image: Image
     var body: some View {
-        Image("nature")
+        image
             .clipShape(Circle())
             // default shapes - roundedRectangle, rectangle, capsule, ellipse
             .overlay(Circle().stroke(Color.white, lineWidth: 1))
@@ -20,6 +21,6 @@ struct CustomImageView: View {
 
 struct CustomImageView_Previews: PreviewProvider {
     static var previews: some View {
-        CustomImageView()
+        CustomImageView(image: Image("nature"))
     }
 }

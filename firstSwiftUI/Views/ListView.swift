@@ -12,7 +12,7 @@ struct ListView: View {
     var body: some View {
         NavigationView {
             List(landmarkData) { landmark in
-                NavigationLink(destination: DetailView()) {
+                NavigationLink(destination: DetailView(landmark: landmark)) {
                     RowView(landMark: landmark)
                 }
             }
