@@ -19,7 +19,7 @@ struct RowView: View {
     }
 }
 
-struct ListView_Previews: PreviewProvider {
+struct RowView_Previews: PreviewProvider {
     static var previews: some View {
         Group {
             RowView(landMark: landmarkData[0])
